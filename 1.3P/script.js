@@ -18,4 +18,4 @@ const backpack = {
 
 }
 
-console.log("Hello World")
+console.log(backpack)
