@@ -1,20 +1,29 @@
 const cardList = [
     {
-        title: "Kitten 2",
+        title: "Pie",
         image: "images/kitten-2.jpg",
         link: "About Kitten 2",
         desciption: "Demo desciption about kitten 2"
     },
     {
-        title: "Kitten 3",
+        title: "Cake",
+        image: "images/kitten-3.jpg",
+        link: "About Kitten 3",
+        desciption: "Demo desciption about kitten 3"
+    },
+    {
+        title: "Cake",
         image: "images/kitten-3.jpg",
         link: "About Kitten 3",
         desciption: "Demo desciption about kitten 3"
     }
+
 ]
+
 const clickMe = () => {
     alert("Thanks for clicking me. Hope you have a nice day!")
 }
+
 const submitForm = () => {
     let formData = {};
     formData.first_name = $('#first_name').val();
@@ -23,6 +32,7 @@ const submitForm = () => {
     formData.email = $('#email').val();
     console.log("Form Data Submitted: ", formData);
 }
+
 const addCards = (items) => {
     items.forEach(item => {
         let itemToAppend = '<div class="col s4 center-align">'+
@@ -36,6 +46,7 @@ const addCards = (items) => {
         $("#card-section").append(itemToAppend)
     });
 }
+
 $(document).ready(function(){
     $('.materialboxed').materialbox();
     $('#formSubmit').click(()=>{
