@@ -1,21 +1,50 @@
 const cardList = [
     {
-        title: "Pie",
-        image: "images/kitten-2.jpg",
-        link: "About Kitten 2",
-        desciption: "Demo desciption about kitten 2"
+        title: "Cherry Pie",
+        image: "images/pie.jpg",
+        link: "How to Cook Cherry Pie",
+        desciption: `600g frozen pitted cherries
+        1 tbsp lemon juice
+        1/2 tsp ground cinnamon
+        1/3 cup raw sugar
+        2 tbsp cornflour
+        1 egg white, lightly beaten
+        Vanilla ice-cream, to serve
+        Pastry
+        1 1/3 cups plain flour
+        1/2 cup self-raising flour
+        1/4 cup custard powder
+        1/4 cup caster sugar
+        150g butter, chilled, chopped
+        1 egg
+        2 tbsp iced water`
     },
     {
-        title: "Cake",
-        image: "images/kitten-3.jpg",
-        link: "About Kitten 3",
-        desciption: "Demo desciption about kitten 3"
+        title: "Chocholate Cake",
+        image: "images/cake.jpg",
+        link: "How to Bake Chocolate Cake",
+        desciption: `1 3/4 cups plain / all purpose flour
+        3/4 cup cocoa powder  unsweetened (Note 2)
+        1 1/2 tsp baking powder
+        1 1/2 tsp baking soda (bi-carb soda)
+        2 cups white sugar (Note 1)
+        1 tsp salt
+        2 eggs (~55-65g / 2 oz each)
+        1 cup milk (low or full fat)
+        1/2 cup vegetable oil (or canola)
+        2 tsp vanilla extract
+        1 cup boiling water`
     },
     {
-        title: "Cake",
-        image: "images/kitten-3.jpg",
-        link: "About Kitten 3",
-        desciption: "Demo desciption about kitten 3"
+        title: "Steak",
+        image: "images/steak.jpg",
+        link: "How to Cook Steak",
+        desciption: `2 boneless ribeye or scotch fillet , 2.5 cm / 1″ thick, approx 300g/10 oz each 
+        1 tbsp vegetable oil
+        Salt and pepper
+        75g / 5 tbsp unsalted butter , cut into 1.25cm / 1/2″ cubes 
+        6 sprigs fresh thyme or 3 sprigs rosemary
+        5 garlic cloves , peeled and smashed to split`
     }
 
 ]
@@ -41,7 +70,7 @@ const addCards = (items) => {
             '<span class="card-title activator grey-text text-darken-4">'+item.title+'<i class="material-icons right">more_vert</i></span><p><a href="#">'+item.link+'</a></p></div>'+
             '<div class="card-reveal">'+
             '<span class="card-title grey-text text-darken-4">'+item.title+'<i class="material-icons right">close</i></span>'+
-            '<p class="card-text">'+item.desciption+'</p>'+
+            '<p class="card-text grey-text">'+item.desciption+'</p>'+
             '</div></div></div>';
         $("#card-section").append(itemToAppend)
     });
