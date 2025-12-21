@@ -1,2 +1,35 @@
+# macOS system files/editor
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+.vscode/
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
 # Dependencies
 node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment (safe even if unused)
+.env
+.env.*.local
